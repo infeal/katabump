@@ -10,6 +10,10 @@ jobs:
   renew:
     runs-on: ubuntu-latest
 
+#  必须在这里强制加上这两行！
+    env:
+      ACTIONS_ALLOW_USE_UNSECURE_NODE_VERSION: true
+      
     steps:
     - uses: actions/checkout@v4
 
